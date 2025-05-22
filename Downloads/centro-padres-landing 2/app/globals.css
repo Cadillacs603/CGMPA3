@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 300 10% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 300 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 300 10% 20%;
+
+    --primary: 315 35% 54%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 315 35% 90%;
+    --secondary-foreground: 315 35% 30%;
+
+    --muted: 315 35% 95%;
+    --muted-foreground: 300 10% 40%;
+
+    --accent: 315 35% 95%;
+    --accent-foreground: 315 35% 30%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 315 35% 85%;
+    --input: 315 35% 85%;
+    --ring: 315 35% 54%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 300 10% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 300 10% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 300 10% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 315 35% 54%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 315 35% 30%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 300 10% 20%;
+    --muted-foreground: 300 10% 70%;
+
+    --accent: 300 10% 20%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 300 10% 25%;
+    --input: 300 10% 25%;
+    --ring: 315 35% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+.bg-primary-gradient {
+  background: linear-gradient(135deg, #b75ca3 0%, #d3a0e0 100%);
+}
